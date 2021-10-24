@@ -5,6 +5,7 @@ import { Container, Box, Heading, Text, Image, Button } from 'theme-ui';
 import BannerImg from 'assets/banner-thumb.png';
 import ShapeLeft from 'assets/shape-left.png';
 import ShapeRight from 'assets/shape-right.png';
+import { Link } from 'react-scroll';
 
 export default function Banner() {
   return (
@@ -19,7 +20,10 @@ export default function Banner() {
                       We want to bring a different approach in the agricultural context by facilitating communication between those who provide services and those who need them
                   </Text>
 
-                  <Button variant="primary">Explore Milestone 1</Button>
+                  <Link to="step1" spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}><Button variant="primary">Explore Milestone 1</Button></Link>
               </Box>
 
               <Box sx={styles.banner.imageBox}>

@@ -12,11 +12,12 @@ import Member3 from 'assets/team/member-3.png';
 import Member4 from 'assets/team/member-4.png';
 import Member5 from 'assets/team/member-5.png';
 import Member6 from 'assets/team/member-6.png';
+import Member7 from 'assets/default-team.jpg'
 
 const data = [
   {
     id: 1,
-    imgSrc: Member1,
+    imgSrc: Member7,
     altText: 'Sebastian SIMIONESCU',
     title: 'Sebastian SIMIONESCU',
     designation: 'Poject Manager',
@@ -43,7 +44,7 @@ const data = [
   },
   {
     id: 2,
-    imgSrc: Member2,
+    imgSrc: Member7,
     altText: 'Theia VLAD',
     title: 'Theia VLAD',
     designation: 'Product Owner ',
@@ -70,7 +71,7 @@ const data = [
   },
   {
     id: 3,
-    imgSrc: Member3,
+    imgSrc: Member7,
     altText: 'Diana GHINDAOANU',
     title: 'Diana GHINDAOANU',
     designation: 'Business Analyst',
@@ -97,7 +98,7 @@ const data = [
   },
   {
     id: 4,
-    imgSrc: Member4,
+    imgSrc: Member7,
     altText: 'Georgiana BESEA',
     title: 'Georgiana BESEA',
     designation: 'Back-end Developer',
@@ -124,7 +125,7 @@ const data = [
   },
   {
     id: 5,
-    imgSrc: Member5,
+    imgSrc: Member7,
     altText: 'Victoria BUBOC',
     title: 'Victoria BUBOC',
     designation: 'Front-end Developer',
@@ -151,7 +152,7 @@ const data = [
   },
   {
     id: 6,
-    imgSrc: Member6,
+    imgSrc: Member7,
     altText: 'Bianca DINUT',
     title: 'Bianca DINUT',
     designation: 'Marketing Specialist',
@@ -180,7 +181,7 @@ const data = [
 
 export default function TeamSection() {
   return (
-    <section sx={{variant: 'section.team'}}>
+    <section sx={{variant: 'section.team'}} id="team">
       <Container>
           <SectionHeader 
             slogan="our team"

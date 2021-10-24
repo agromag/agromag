@@ -11,7 +11,10 @@ export default function Logo({ src, ...rest }) {
           variant: 'links.logo',
           display: 'flex',
           cursor: 'pointer',
-          mr: 15
+          mr: 15,
+          width:'50px',
+          height: '50px'
+
         }}
         {...rest}
       >

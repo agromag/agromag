@@ -116,8 +116,8 @@ export default {
     },
 
     team: {
-      pt: [8, null, 9, null, null, 10, null, '180px'],
-      pb: ['90px', null, 9, null, null, 10, null, '180px'],
+      pt: [8, null, 9, null, null, 10, null, null],
+      pb: ['90px', null, 9, null, null, 10, null, null],
     },
   },
   sectionHeader: {

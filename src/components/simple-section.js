@@ -37,13 +37,20 @@ const data = {
   ],
 };
 
-export default function Section({image, title, subTitle, content, reverse}) {
+export default function Section({image, title, subTitle, content, reverse, children}) {
   return (
     <section sx={styles.simpleSection}>
         <Container sx={styles.containerBox}>
             <Box sx={styles.contentBox} className="no-image">
                 <TextFeature subTitle={subTitle} title={title} description={content}/>
+
+                {children && (
+                    children
+                )}
             </Box>
+
+            
+
         </Container>
     </section>
   );

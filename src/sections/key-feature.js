@@ -20,7 +20,7 @@ const data = [
   },
   {
     id: 2,
-    imgSrc: Partnership,
+    imgSrc: Performance,
     altText: 'Great pottential',
     title: 'Great pottential',
     text:
@@ -28,7 +28,7 @@ const data = [
   },
   {
     id: 3,
-    imgSrc: Subscription,
+    imgSrc: Performance,
     altText: 'Vulnerable Field',
     title: 'Vulnerable Field',
     text:
@@ -36,9 +36,9 @@ const data = [
   },
   {
     id: 4,
-    imgSrc: Support,
-    altText: 'Customer Support',
-    title: 'Customer Support',
+    imgSrc: Performance,
+    altText: 'Opportunity',
+    title: 'Opportunity',
     text:
       "Uncultivated land plots and unused equipment, as well as failure to adopt modern techniques, annually influence the agricultural sector.",
   },
@@ -46,7 +46,7 @@ const data = [
 
 export default function KeyFeature() {
   return (
-      <section sx={{variant: 'section.keyFeature'}} id="feature">
+      <section sx={{variant: 'section.keyFeature'}} id="step1">
           <Container>
               <SectionHeader 
                   slogan="We noticed the"

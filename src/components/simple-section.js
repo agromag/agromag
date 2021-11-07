@@ -8,7 +8,7 @@ import Interview from './interview'
 
 
 
-export default function Section({image=null, title, subTitle, content, reverse, children, component=null, other=null}) {
+export default function Section({image=null, title, subTitle, content, reverse, children, component=null, other=null, formSection=null}) {
 
 
   return (
@@ -28,6 +28,17 @@ export default function Section({image=null, title, subTitle, content, reverse, 
                 {image && (
                     image.map((item,i) => <Image src={item} alt="text" sx={{marginBottom:'40px'}} key={i}/>)
                 )}
+
+                {formSection && (
+                    <Box>
+                        {formSection.text.map((item,i) => <p key={i}>{item}</p>)}
+                        {formSection.images.map((item,i ) => <Image src={item} alt="text" sx={{marginBottom:'40px'}} key={i}/>)}
+
+                        <Text>{formSection.conclusions.text}</Text>
+                        <List items={formSection.conclusions.component.content} childStyle={{fontSize: '18px', textAlign: 'left'}}/>
+                    </Box>
+                )}
+
 
                 {other && (
                   other.map((interview, i) => <Interview key={i} title={interview.title} items={interview.items}/>)

@@ -7,7 +7,7 @@ import ShapeLeft from 'assets/shape-left.png';
 import ShapeRight from 'assets/shape-right.png';
 import { Link } from 'react-scroll';
 
-export default function Banner() {
+export default function Banner({buttonText}) {
   return (
       <section sx={styles.banner} id="home">
           <Container sx={styles.banner.container}>
@@ -23,7 +23,7 @@ export default function Banner() {
                   <Link to="step1" spy={true}
                         smooth={true}
                         offset={-70}
-                        duration={500}><Button variant="primary">Explore Milestone 1</Button></Link>
+                        duration={500}><Button variant="primary">{buttonText}</Button></Link>
               </Box>
 
               <Box sx={styles.banner.imageBox}>

@@ -1,43 +1,16 @@
 // @ts-nocheck
 import React, { useState } from 'react';
 /** @jsx jsx */
-import { jsx, Container, Box, Grid, Text, Heading, Button, Image } from 'theme-ui';
-import { keyframes } from '@emotion/core';
+import { jsx, Container, Box, Text, Heading, Button, Image } from 'theme-ui';
 import TextFeature from 'components/text-feature';
-import ModalVideo from 'react-modal-video';
-import { IoIosPlay } from 'react-icons/io';
+import List from './list'
+import Interview from './interview'
 
-import ServiceThumb from 'assets/service-thumb.png';
-import shapePattern from 'assets/shape-pattern1.png';
 
-import Smart from 'assets/services/smart.svg';
-import Secure from 'assets/services/secure.svg';
 
-const data = {
-  subTitle: 'our solution',
-  title: 'Is Agromag',
-  description: "The Agromag solution aims to facilitate communication between stakeholders, offering users the opportunity to distribute ads and connect with other entities interested in providing various services. Starting from the rental of agricultural equipment and arable land and continuing with the possibility of finding workers, our platform addresses exclusively the agricultural sector, having as its main goal the full exploitation of resources and the improvement of this sector.",
-  features: [
-    {
-      id: 1,
-      imgSrc: Smart,
-      altText: 'Smart Features',
-      title: 'Smart Features',
-      text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
-    },
-    {
-      id: 2,
-      imgSrc: Secure,
-      altText: 'Secure Contents',
-      title: 'Secure Contents',
-      text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
-    },
-  ],
-};
+export default function Section({image=null, title, subTitle, content, reverse, children, component=null, other=null}) {
 
-export default function Section({image, title, subTitle, content, reverse, children}) {
+
   return (
     <section sx={styles.simpleSection}>
         <Container sx={styles.containerBox}>
@@ -47,6 +20,19 @@ export default function Section({image, title, subTitle, content, reverse, child
                 {children && (
                     children
                 )}
+
+                {component && (
+                    <List items={component.content} childStyle={{fontSize: '18px', textAlign: 'left'}}/>
+                )}
+
+                {image && (
+                    image.map((item,i) => <Image src={item} alt="text" sx={{marginBottom:'40px'}} key={i}/>)
+                )}
+
+                {other && (
+                  other.map((interview, i) => <Interview key={i} title={interview.title} items={interview.items}/>)
+                )}
+                
             </Box>
 
             

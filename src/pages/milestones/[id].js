@@ -84,12 +84,3 @@ export default function Milestones(props){
     )
 }
 
-export const getStaticPaths = async () => {
-    // Get all posts via API, file, etc.
-    const posts = milestones; // Example
-    const paths = milestones.map(post => ({
-        params: { id: post.id },
-    }));
-
-    return { paths, fallback: false };
-};

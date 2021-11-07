@@ -16,7 +16,7 @@ import Section from 'components/simple-section'
 import Competion from 'sections/competion';
 import List from 'components/list';
 import { IoIosCheckmarkCircle, IoIosCloseCircle } from 'react-icons/io';
-
+import milestones from '../data/milestones';
 
 export default function IndexPage() {
 
@@ -173,20 +173,23 @@ export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
         <Layout>
-          <SEO title="Agromat - Fiky Page" />
-          <Banner />
+          <SEO title="Agromag - Fiky Page" />
+          <Banner buttonText="Explore Milestone 2" />
           <KeyFeature />
           {/* <ServiceSection /> */}
           
-          {milestoneOneData.sections.map((section,i) => (
-              <Section 
-                  title={section.title}
-                  subTitle = {section.subTitle}
-                  content = {section.content}
-                  key={i}
-                  children = {section.children ? section.children : null}
-              />
-          ))}
+          {milestones && milestones.sections.map((section,i) => (
+                    <Section 
+                        title={section.title}
+                        subTitle = {section.subTitle}
+                        content = {section.content}
+                        key={i}
+                        children = {section.children ? section.children : null}
+                        component = {section.component ? section.component : null }
+                        image = {section.image ? section.image : null}
+                        other = {section.other ? section.other : null }
+                    />
+                ))}
           
           
           <TeamSection />

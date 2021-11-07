@@ -1,6 +1,19 @@
 import { IoIosCheckmarkCircle, IoIosCloseCircle } from 'react-icons/io'
 import Image1 from '../../assets/milestones/2/Image1.jpeg'
 import Image2 from '../../assets/milestones/2/Image2.jpeg'
+import Image3 from '../../assets/milestones/2/1.png'
+import Image4 from '../../assets/milestones/2/2.png'
+import Image5 from '../../assets/milestones/2/3.png'
+import Image6 from '../../assets/milestones/2/4.png'
+import Image7 from '../../assets/milestones/2/5.png'
+import Image8 from '../../assets/milestones/2/6.png'
+import Image9 from '../../assets/milestones/2/7.png'
+import Image10 from '../../assets/milestones/2/8.png'
+import Image11 from '../../assets/milestones/2/9.png'
+import Image12 from '../../assets/milestones/2/10.png'
+import Image13 from '../../assets/milestones/2/11.png'
+import Image14 from '../../assets/milestones/2/12.png'
+import Image15 from '../../assets/milestones/2/13.png'
 
 const milestones = [
     {
@@ -231,6 +244,58 @@ const milestones = [
                     Image1, 
                     Image2
                 ],
+                formSection: {
+                    text: [
+                        "The process of discovering potential customers was focused on the one hand on sharing a questionnaire with questions relevant to the field of applicability of our solution and, on the other hand, by organizing interviews with the person that our team considered to be. interested. The segment we addressed includes people who carry out activities in the agricultural field and, in order to obtain their answer, we acted in two parts: we shared the online questionnaire on facebook groups dedicated to Romanian farmers and we organized telephone interviews with acquaintances. which operates in this field. ",
+                        "Given that we address exclusively the Romanian market, the questionnaire contains questions only in Romanian, and its purpose is to discover the needs of local farmers and to see if our application could be really useful for it. So, here are some results: "
+                    ],
+                    images: [
+                        Image3,Image4,Image5,Image6,Image7,Image8,Image9,Image10,Image11,Image12,Image13,Image14,Image15,
+                    ],
+                    conclusions: {
+                        text: 'After analyzing the results obtained by spreading this form, I drew the following conclusions: ',
+                        component: {
+                            type: 'list',
+                            content: [
+                                {
+                                    id: 1,
+                                    icon: <IoIosCheckmarkCircle />,
+                                    text: 'Most users have at least an average level of experience in using the Internet and prefer to use a mobile phone to access various applications. ',
+                                    isAvailable: true,
+                                },
+        
+                                {
+                                    id: 2,
+                                    icon: <IoIosCheckmarkCircle />,
+                                    text: ' Although there are particular cases, farmers who have resources also offer services in this area ',
+                                    isAvailable: true,
+                                },
+        
+                                {
+                                    id: 3,
+                                    icon: <IoIosCheckmarkCircle />,
+                                    text: 'Most farmers own arable land and equipment that they do not fully exploit, but also offer services in the field (labor, freight or consulting) and some of them also obtain financial benefits ',
+                                    isAvailable: true,
+                                },
+        
+                                {
+                                    id: 4,
+                                    icon: <IoIosCheckmarkCircle />,
+                                    text: 'For many of those interested, there have been situations in which they needed help in carrying out various activities and prefer to turn to the recommendations of acquaintances or look for various solutions on the Internet. ',
+                                    isAvailable: true,
+                                },
+        
+                                {
+                                    id: 5,
+                                    icon: <IoIosCheckmarkCircle />,
+                                    text: 'The amounts that users would be willing to invest to receive help differ depending on the possibilities and needs of each, but from the attached graphs it can be seen that most users are willing to invest in such services. ',
+                                    isAvailable: true,
+                                },
+                            ]
+                        }
+                    },
+
+                },
                 content: "In order to contact people working in agriculture, we first searched for Facebook groups dedicated to this topic, where we were able to distribute our form to get answers from the right people. The questions that were asked in the form can be seen below: ",
                 other: [
                     {

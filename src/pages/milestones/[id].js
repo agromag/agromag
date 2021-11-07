@@ -71,6 +71,7 @@ export default function Milestones(props){
                         children = {section.children ? section.children : null}
                         component = {section.component ? section.component : null }
                         image = {section.image ? section.image : null}
+                        formSection = {section.formSection ? section.formSection : null}
                         other = {section.other ? section.other : null }
                     />
                 ))}

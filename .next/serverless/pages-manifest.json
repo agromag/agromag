@@ -1,0 +1,6 @@
+{
+  "/": "pages/index.html",
+  "/milestones/[id]": "pages/milestones/[id].html",
+  "/_error": "pages/_error.js",
+  "/404": "pages/404.html"
+}

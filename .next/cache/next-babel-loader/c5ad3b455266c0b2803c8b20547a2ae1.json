@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\n\n/** @jsx jsx */\nimport { jsx, Container, Box, Image } from 'theme-ui';\nexport default function Problems() {\n  return jsx(\"section\", {\n    sx: {\n      variant: 'section.problems'\n    }\n  }, jsx(Container, null));\n}","map":null,"metadata":{},"sourceType":"module"}

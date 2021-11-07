@@ -289,7 +289,7 @@ export default {
       borderColor: 'primary',
       color: 'primary',
       bg: 'transparent',
-      padding: ['10px 15px', null, '15px 30px'],
+      padding: ['12px 20px', null, '12px 30px'],
       '&:hover': {
         color: 'white',
         bg: 'primary',

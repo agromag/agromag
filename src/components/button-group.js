@@ -23,7 +23,7 @@ export default function ButtonGroup({ next=null, previous=null }) {
 
         <Container sx={styles.containerBox}>
           {previous && (<Button variant={next ? 'secondary' : 'primary'}onClick={handlePrevEvent}>Previous </Button>)} 
-            {next && (<Button variant="primary" style={{marginLeft: '20px'}} onClick={handleNextEvent}>Next </Button>)}
+          {next && (<Button variant="primary" style={{marginLeft: '20px'}} onClick={handleNextEvent}>Next </Button>)}
         </Container>
 
       </Flex>

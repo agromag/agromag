@@ -11,6 +11,7 @@ import TeamSection from '../../sections/team-section';
 import Section from '../../components/simple-section'
 import KeyFeature from '../../sections/key-feature'
 import ButtonGroup from '../../components/button-group'
+import { GetStaticPaths, GetStaticProps } from 'next';
 
 export default function Milestones(props){
 
@@ -82,3 +83,13 @@ export default function Milestones(props){
         </ThemeProvider>
     )
 }
+
+export const getStaticPaths = async () => {
+    // Get all posts via API, file, etc.
+    const posts = milestones; // Example
+    const paths = milestones.map(post => ({
+        params: { id: post.id },
+    }));
+
+    return { paths, fallback: false };
+};

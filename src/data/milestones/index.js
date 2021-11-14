@@ -14,6 +14,7 @@ import Image12 from '../../assets/milestones/2/10.png'
 import Image13 from '../../assets/milestones/2/11.png'
 import Image14 from '../../assets/milestones/2/12.png'
 import Image15 from '../../assets/milestones/2/13.png'
+import { Link } from 'components/link'
 
 const milestones = [
     {
@@ -379,7 +380,36 @@ const milestones = [
                 content: "Considering the answers received at this stage, we believe that our product can move to the next step of its development. Given the fact that people working in agriculture feel the need to use an application that facilitates the exchange of services in this field, we believe that we are ready to move towards the stage of validation and selling testing. ",
             },
         ]
+    },
+
+    {
+        id: '3',
+        sections: [
+            {
+                title: 'Landing Page',
+                subTitle: "We Built our",
+                image: '',
+                content: '',
+                link: {
+                    label: 'Go to the landing page',
+                    path: 'https://agromag-lp.vercel.app/'
+                }  
+            },
+
+            {
+                title: 'Wireframes',
+                subTitle: "Also we Built the",
+                image: '',
+                content: '',
+                link: {
+                    label: 'Checkout our wireframes',
+                    path: '/AgroMag Wireframe-2.pdf'
+                }  
+            },
+        ]
+        
     }
 ]
 
 export default milestones
+

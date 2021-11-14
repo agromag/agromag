@@ -5,10 +5,11 @@ import { jsx, Container, Box, Text, Heading, Button, Image } from 'theme-ui';
 import TextFeature from 'components/text-feature';
 import List from './list'
 import Interview from './interview'
+import { Link } from './link';
 
 
 
-export default function Section({image=null, title, subTitle, content, reverse, children, component=null, other=null, formSection=null}) {
+export default function Section({image=null, title, subTitle, content, reverse, children, component=null, other=null, formSection=null, link=null}) {
 
 
   return (
@@ -43,6 +44,12 @@ export default function Section({image=null, title, subTitle, content, reverse, 
                 {other && (
                   other.map((interview, i) => <Interview key={i} title={interview.title} items={interview.items}/>)
                 )}
+
+                {
+                  link && (
+                    <strong><Link path={link.path} >{link.label}</Link></strong>
+                  )
+                }
                 
             </Box>
 

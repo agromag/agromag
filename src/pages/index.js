@@ -22,27 +22,27 @@ export default function IndexPage() {
       id: 1,
       title: 'Milestone 1',
       subTitle: 'Project Details',
-      description: '',
+      description: 'This section offers an overview of your project. It is also meant to help you clarify a few essential aspects regarding our project. ',
       path: '/milestones/1',
-      date: '2011 - present'
+      date: '25.10.2021'
     },
 
     {
       id: 2,
       title: 'Milestone 2',
-      subTitle: 'Project Details',
-      description: '',
+      subTitle: 'Validation 1',
+      description: "This is one of the most important milestones. You need to go through the Customer Discovery process presented in the second lecture. Your initial focus should be on testing the problem, and then the solution (test your understanding of the customers' problem or need, and only after validating this, determine if the your solution matches this need)",
       path: '/milestones/2',
-      date: '2011 - present'
+      date: '8.11.2021'
     },
 
     {
       id: 3,
       title: 'Milestone 3',
-      subTitle: 'Project Details',
-      description: '',
+      subTitle: 'Landing Page and Wireframe',
+      description: 'Wireframe and landing page',
       path: '/milestones/3',
-      date: '2011 - present'
+      date: '15.11.2021'
     },
 
   ]
@@ -67,7 +67,7 @@ export default function IndexPage() {
                     position={milestone.id%2==0 ? "left" : "right"}
                 >
                   <h3 className="vertical-timeline-element-title">{milestone.title}</h3>
-                  <h4 className="vertical-timeline-element-subtitle">{milestone.subtitle}</h4>
+                  <h4 className="vertical-timeline-element-subtitle">{milestone.subTitle}</h4>
                   <p> {milestone.description}</p>
 
                 </VerticalTimelineElement>

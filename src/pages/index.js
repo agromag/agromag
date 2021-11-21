@@ -45,6 +45,15 @@ export default function IndexPage() {
       date: '15.11.2021'
     },
 
+    {
+      id: 3,
+      title: 'Milestone 4',
+      subTitle: 'UX',
+      description: '',
+      path: '/milestones/4',
+      date: '22.11.2021'
+    },
+
   ]
   
   return (

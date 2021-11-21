@@ -14,6 +14,8 @@ import Image12 from '../../assets/milestones/2/10.png'
 import Image13 from '../../assets/milestones/2/11.png'
 import Image14 from '../../assets/milestones/2/12.png'
 import Image15 from '../../assets/milestones/2/13.png'
+import Image16 from '../../assets/milestones/4/Flow post_view ad.drawio.png'
+import Image17 from '../../assets/milestones/4/User stories.png'
 import { Link } from 'components/link'
 
 const milestones = [
@@ -405,6 +407,28 @@ const milestones = [
                     label: 'Checkout our wireframes',
                     path: '/AgroMag Wireframe-2.pdf'
                 }  
+            },
+        ]
+        
+    },
+
+    {
+        id: '4',
+        sections: [
+            {
+                title: 'Stories, Cases / Flows',
+                subTitle: "User",
+                image: [
+                    Image16,
+                    Image17
+                ],
+                
+            },
+
+            {
+                title: 'Face-to-face Interviews & User persona',
+                subTitle: "In Progress",
+                content: 'For these two requirements we encountered some problems. Because in the field we choose it is a little more difficult to find people willing to collaborate and want to support the interviews, we have to postpone this stage for a week. Many of the people contacted did not agree to be recorded, and those who are willing to do so did not have the availability to hold the interview this week. So, we have scheduled a few interviews next week, and we will make changes to these requirements by the end of the next milestone.',
             },
         ]
         

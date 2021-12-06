@@ -16,6 +16,15 @@ import Image14 from '../../assets/milestones/2/12.png'
 import Image15 from '../../assets/milestones/2/13.png'
 import Image16 from '../../assets/milestones/4/Flow post_view ad.drawio.png'
 import Image17 from '../../assets/milestones/4/User stories.png'
+import Image18 from '../../assets/milestones/5/analytics.png'
+import Image19 from '../../assets/milestones/5/FB Page.JPG'
+import Image20 from '../../assets/milestones/5/FB Page2.JPG'
+import Image21 from '../../assets/milestones/5/FB Page3.JPG'
+import Image22 from '../../assets/milestones/5/Share1.JPG'
+import Image23 from '../../assets/milestones/5/Share2.JPG'
+import Image24 from '../../assets/milestones/5/Share3.JPG'
+import Image25 from '../../assets/milestones/5/User Persona.PNG'
+
 import { Link } from 'components/link'
 
 const milestones = [
@@ -432,6 +441,50 @@ const milestones = [
             },
         ]
         
+    },
+
+    {
+        id: '5',
+        sections: [
+            {
+                title: 'Section to our landing page',
+                subTitle: "lead collection",
+                content: "We added a form to our landing page so we can collect leads."
+                
+            },
+
+            {
+                title: 'Analytics',
+                subTitle: 'Google',
+                content: "We added Google Analytics so we can understand our user behavior ",
+                image: [
+                    Image18
+                ]
+            },
+
+            {
+                title: 'To our FB page',
+                subTitle: 'Bring People',
+                content: "We create a facebook page so we can start building a community ",
+                image: [
+                    Image19,
+                    Image20,
+                    Image21,
+                    Image22,
+                    Image23,
+                    Image24
+                ]
+            },
+
+            {
+                title: 'Persona',
+                subTitle: 'User',
+                image: [
+                    Image25,
+                ]
+            },
+
+        ]
     }
 ]
 

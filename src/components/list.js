@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Box, IconButton } from 'theme-ui';
+import { Flex, Box, IconButton, Image } from 'theme-ui';
 
 export default function List({ items = [], parentStyle, childStyle }) {
   return (
@@ -14,12 +14,16 @@ export default function List({ items = [], parentStyle, childStyle }) {
         }}
       >
         {items.map((item,i) => (
-            <Flex className={item.isAvailable ? 'open': 'close'} as="li" sx={{...childStyle}} key={i}>
+            <Box>
+              <Flex className={item.isAvailable ? 'open': 'close'} as="li" sx={{...childStyle}} key={i}>
                 <IconButton sx={styles.listIcon} aria-label="list icon">
                     {item.icon}
                 </IconButton>
                 {item.text}
             </Flex>
+              {item.image && <Image src={item.image} />}
+              {item.description && <p>{item.description}</p>}
+            </Box>
         ))}
       </Box>
   );

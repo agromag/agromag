@@ -46,12 +46,30 @@ export default function IndexPage() {
     },
 
     {
-      id: 3,
+      id: 4,
       title: 'Milestone 4',
       subTitle: 'UX',
       description: '',
       path: '/milestones/4',
       date: '22.11.2021'
+    },
+
+    {
+      id: 5,
+      title: 'Milestone 5',
+      subTitle: '',
+      description: '',
+      path: '/milestones/5',
+      date: '22.11.2021'
+    },
+
+    {
+      id: 6,
+      title: 'Milestone 6',
+      subTitle: '',
+      description: '',
+      path: '/milestones/6',
+      date: '13.12.2021'
     },
 
   ]
